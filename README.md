@@ -77,7 +77,7 @@ ai_personal_finance_app/
 ### 3️⃣ Configure Environment  
     cp .env.example .env
 
-# Edit `.env`:
+ # Edit `.env`:
     OPENAI_API_KEY=sk-xxxxxx        # optional for AI bot
     APP_USERNAME=demo               # login username
     APP_PASSWORD=Password       # login password
@@ -88,7 +88,7 @@ ai_personal_finance_app/
 
 
 ## 📤 Using Your Data  
----
+
 CSV format:
 date, description, category, amount, type
 2024-04-10,Salary payment,Salary,4000,income
@@ -98,7 +98,7 @@ date, description, category, amount, type
 
 - `type` = `income` or `expense`  
 - Replace with your own transactions or start with the included `transactions_large.csv`.  
----
+
 
 
 ## 🐳 Docker Deployment 
@@ -106,7 +106,6 @@ date, description, category, amount, type
 ---
 docker build -t finance-app .
 docker run -p 8501:8501 --env-file .env finance-app
----
 
 
 
@@ -116,10 +115,9 @@ docker run -p 8501:8501 --env-file .env finance-app
 This project is for **educational and personal use only**.  
 It does **not provide financial, tax, or legal advice**.  
 Use your own judgment before making financial decisions.  
----
 
 
 ## 👩‍💻 Author
 ---
 Nandini Kosgi
-🔗 LinkedIn: https://www.linkedin.com/in/nandinikosgi/
+  🔗 LinkedIn: https://www.linkedin.com/in/nandinikosgi/
