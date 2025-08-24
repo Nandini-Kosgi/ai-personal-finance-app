@@ -117,4 +117,4 @@ Use your own judgment before making financial decisions.
 ## 👩‍💻 Author
 
 Nandini Kosgi
-  🔗 LinkedIn: https://www.linkedin.com/in/nandinikosgi/
+🔗 LinkedIn: https://www.linkedin.com/in/nandinikosgi/
