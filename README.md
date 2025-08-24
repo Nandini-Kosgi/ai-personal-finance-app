@@ -69,43 +69,28 @@ ai_personal_finance_app/
 
 ---
 ### 1️⃣ Clone & Setup 
-
-git clone https://github.com/your-username/ai-personal-finance-app.git
-cd ai-personal-finance-app
-python -m venv .venv
 # activate venv
-source .venv/Scripts/activate     # Git Bash
-# or
-.venv\Scripts\activate            # Command Prompt / PowerShell
-
 
 ### 2️⃣ Install Requirements  
-
 pip install -r requirements.txt
 
-
 ### 3️⃣ Configure Environment  
-
 cp .env.example .env
 
-
-Edit `.env`:
-```env
+# Edit `.env`:
 OPENAI_API_KEY=sk-xxxxxx        # optional for AI bot
 APP_USERNAME=demo               # login username
 APP_PASSWORD=Password       # login password
 ```
 
 ### 4️⃣ Run App  
-
 streamlit run app/streamlit_app.py
 ---
 
 
 ## 📤 Using Your Data  
----
-CSV format:
 
+CSV format:
 date, description, category, amount, type
 2024-04-10,Salary payment,Salary,4000,income
 2024-04-12,Walmart groceries,Groceries,120.50,expense
@@ -119,7 +104,6 @@ date, description, category, amount, type
 
 ## 🐳 Docker Deployment  
 
-
 docker build -t finance-app .
 docker run -p 8501:8501 --env-file .env finance-app
 ---
@@ -127,13 +111,13 @@ docker run -p 8501:8501 --env-file .env finance-app
 
 
 ## ⚠️ Note  
----
+
 This project is for **educational and personal use only**.  
 It does **not provide financial, tax, or legal advice**.  
 Use your own judgment before making financial decisions.  
 ---
 
----
+
 ## 👩‍💻 Author
 Nandini Kosgi
 🔗 LinkedIn: https://www.linkedin.com/in/nandinikosgi/
