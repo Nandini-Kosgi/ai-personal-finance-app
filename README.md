@@ -7,6 +7,7 @@ It helps users analyze transactions, visualize spending, run financial simulatio
 
 ## ✨ Features  
 
+---
 - **📊 Dashboard & Analytics**  
   - Upload transactions (CSV)  
   - Track monthly income vs. expenses  
@@ -26,8 +27,8 @@ It helps users analyze transactions, visualize spending, run financial simulatio
     - “What are my top 3 spending categories in 2024?”  
     - “How much did I spend on groceries vs. restaurants last month?”  
     - “What’s my average monthly savings rate?”  
-  - Powered by OpenAI GPT models (`gpt-4o-mini` default)  
-
+  - Powered by OpenAI GPT models (`gpt-4o-mini` default)
+  ---
 
 
 ## 🛠️ Tech Stack  
@@ -66,6 +67,7 @@ ai_personal_finance_app/
 
 ## ⚡ Quickstart (In bash) 
 
+---
 ### 1️⃣ Clone & Setup 
 
 git clone https://github.com/your-username/ai-personal-finance-app.git
@@ -97,13 +99,13 @@ APP_PASSWORD=Password       # login password
 ### 4️⃣ Run App  
 
 streamlit run app/streamlit_app.py
-
+---
 
 
 ## 📤 Using Your Data  
-
+---
 CSV format:
-```
+
 date, description, category, amount, type
 2024-04-10,Salary payment,Salary,4000,income
 2024-04-12,Walmart groceries,Groceries,120.50,expense
@@ -120,17 +122,18 @@ date, description, category, amount, type
 
 docker build -t finance-app .
 docker run -p 8501:8501 --env-file .env finance-app
-
+---
 
 
 
 ## ⚠️ Note  
-
+---
 This project is for **educational and personal use only**.  
 It does **not provide financial, tax, or legal advice**.  
 Use your own judgment before making financial decisions.  
+---
 
-
+---
 ## 👩‍💻 Author
 Nandini Kosgi
 🔗 LinkedIn: https://www.linkedin.com/in/nandinikosgi/
