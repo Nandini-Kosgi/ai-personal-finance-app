@@ -3,7 +3,7 @@
 A **privacy-first personal finance dashboard** built with **Streamlit**.  
 It helps users analyze transactions, visualize spending, run financial simulations, and optionally chat with an **AI assistant** for plain-language insights.  
 
----
+
 
 ## ✨ Features  
 
@@ -28,7 +28,7 @@ It helps users analyze transactions, visualize spending, run financial simulatio
     - “What’s my average monthly savings rate?”  
   - Powered by OpenAI GPT models (`gpt-4o-mini` default)  
 
----
+
 
 ## 🛠️ Tech Stack  
 
@@ -62,12 +62,12 @@ ai_personal_finance_app/
 └── README.md                 # Project documentation
 ```
 
----
 
-## ⚡ Quickstart  
 
-### 1️⃣ Clone & Setup  
-```bash
+## ⚡ Quickstart (In bash) 
+
+### 1️⃣ Clone & Setup 
+
 git clone https://github.com/your-username/ai-personal-finance-app.git
 cd ai-personal-finance-app
 python -m venv .venv
@@ -75,32 +75,30 @@ python -m venv .venv
 source .venv/Scripts/activate     # Git Bash
 # or
 .venv\Scripts\activate            # Command Prompt / PowerShell
-```
+
 
 ### 2️⃣ Install Requirements  
-```bash
+
 pip install -r requirements.txt
-```
+
 
 ### 3️⃣ Configure Environment  
-```bash
+
 cp .env.example .env
-```
+
 
 Edit `.env`:
 ```env
 OPENAI_API_KEY=sk-xxxxxx        # optional for AI bot
 APP_USERNAME=demo               # login username
-APP_PASSWORD=MyFinance01@       # login password
+APP_PASSWORD=Password       # login password
 ```
 
 ### 4️⃣ Run App  
-```bash
-streamlit run app/streamlit_app.py
-```
-Open 👉 [http://localhost:8501](http://localhost:8501)  
 
----
+streamlit run app/streamlit_app.py
+
+
 
 ## 📤 Using Your Data  
 
@@ -110,42 +108,29 @@ date, description, category, amount, type
 2024-04-10,Salary payment,Salary,4000,income
 2024-04-12,Walmart groceries,Groceries,120.50,expense
 2024-04-14,Uber ride,Transport,25.00,expense
-```
+
 
 - `type` = `income` or `expense`  
 - Replace with your own transactions or start with the included `transactions_large.csv`.  
 
----
+
 
 ## 🐳 Docker Deployment  
 
-```bash
+
 docker build -t finance-app .
 docker run -p 8501:8501 --env-file .env finance-app
-```
 
----
 
-## ☁️ Cloud Deployment  
 
-- **Render/Railway:** Deploy directly from GitHub (Dockerfile auto-detected).  
-- **Google Cloud Run:**  
-  ```bash
-  gcloud builds submit --tag gcr.io/PROJECT/finance-app
-  gcloud run deploy finance-app --image gcr.io/PROJECT/finance-app     --platform managed --allow-unauthenticated     --set-env-vars OPENAI_API_KEY=sk-xxxx,APP_USERNAME=demo,APP_PASSWORD=MyFinance01@
-  ```
-- **AWS ECS Fargate:** Push Docker image to ECR → create ECS service → expose port 8501.  
 
----
-
-## ⚠️ Disclaimer  
+## ⚠️ Note  
 
 This project is for **educational and personal use only**.  
 It does **not provide financial, tax, or legal advice**.  
 Use your own judgment before making financial decisions.  
 
----
 
-## 📜 License  
-
-MIT License — free to use, modify, and share.  
+## 👩‍💻 Author
+Nandini Kosgi
+🔗 LinkedIn: https://www.linkedin.com/in/nandinikosgi/
